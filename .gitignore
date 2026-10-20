@@ -1,0 +1,6 @@
+dist/
+node_modules/
+.tools/
+.sites-runtime/
+*.tar.gz
+qa/

@@ -1,0 +1,17 @@
+{
+  "name": "dividenda-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit --strict --target ES2022 src/content.ts && node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5",
+    "typescript": "7.0.2"
+  }
+}
