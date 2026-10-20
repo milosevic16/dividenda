@@ -54,7 +54,7 @@ export const content = {
     direct: '', directLink: 'Kontakt'
   },
   about: {
-    eyebrow: 'SPOZNAJTE DIVIDENDO',
+    eyebrow: '17 LET IZKUŠENJ',
     heading: 'Znanje in izkušnje.', italic: 'Dividenda d.o.o.',
     intro: 'Igor Jakolič, nepremičninski posrednik in investicijski svetovalec.',
     text: 'Licenca št. 2802. Vpis v imenik nepremičninskih posrednikov št. 0283102802.',

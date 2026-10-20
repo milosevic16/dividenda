@@ -39,7 +39,8 @@ assert.match(html,/<html lang="sl">/);
 assert.ok(html.includes(`<link rel="canonical" href="${origin}/">`));
 for (const attr of ['og:title','og:description','og:url','og:image','og:locale']) assert.ok(html.includes(`property="${attr}"`),attr);
 for (const lang of ['sl','x-default']) assert.ok(html.includes(`hreflang="${lang}" href="${origin}/"`));
-assert.ok(!/gozd|10\.000|17 LET/i.test(html),'Forest advertisement and stale age claim omitted');
+assert.ok(!/gozd|10\.000/i.test(html),'Forest advertisement omitted');
+assert.equal(html.split('17 LET IZKUŠENJ').length - 1, 1, 'User-requested experience motto appears once');
 assert.ok(html.includes('051 848 241') && html.includes('info@dividenda.com'));
 assert.equal((html.match(/<details open/g)||[]).length,4,'Services expanded without JavaScript');
 const strings = value => typeof value === 'string' ? [value] : value && typeof value === 'object' ? Object.values(value).flatMap(strings) : [];
@@ -59,12 +60,12 @@ const canonical = html.match(/rel="canonical" href="([^"]+)"/)[1];
 await fs.writeFile(path.join(output,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>${canonical}</loc><xhtml:link rel="alternate" hreflang="sl" href="${canonical}"/><xhtml:link rel="alternate" hreflang="x-default" href="${canonical}"/></url></urlset>`);
 await fs.writeFile(path.join(output,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
 await fs.writeFile(path.join(output,'_headers'),'/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n  Content-Security-Policy: frame-ancestors \'none\'\n  Strict-Transport-Security: max-age=31536000; includeSubDomains\n  Cache-Control: no-cache\n');
-const colors = {ink:'#292e28',paper:'#f5f3eb',muted:'#626658',yellow:'#e7df77',panel:'#eae8dd',darkMuted:'#c5c9bb'};
+const colors = {ink:'#292e28',paper:'#f5f3eb',muted:'#626658',yellow:'#e7df77',panel:'#eae8dd',darkMuted:'#c5c9bb',portalActive:'#343b30'};
 const luminance = hex => {
  const c=hex.slice(1).match(/../g).map(x=>parseInt(x,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4);
  return c[0]*.2126+c[1]*.7152+c[2]*.0722;
 };
-for(const [front,back] of [['ink','paper'],['muted','paper'],['muted','panel'],['ink','yellow'],['paper','ink'],['yellow','ink'],['darkMuted','ink']]) {
+for(const [front,back] of [['ink','paper'],['muted','paper'],['muted','panel'],['ink','yellow'],['paper','ink'],['yellow','ink'],['darkMuted','ink'],['paper','portalActive'],['darkMuted','portalActive'],['yellow','portalActive']]) {
  const a=luminance(colors[front]),b=luminance(colors[back]);
  const ratio=(Math.max(a,b)+.05)/(Math.min(a,b)+.05);
  assert.ok(ratio>=4.5,`AA text contrast ${front}/${back}`);
