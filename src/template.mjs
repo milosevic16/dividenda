@@ -57,7 +57,7 @@ export function render(origin) {
     <div class="service-list">${c.services.items.map((s)=>`<details open class="service"><summary>${icon(s.icon)}<h3>${e(s.title)}</h3><span class="detail-toggle" aria-hidden="true"></span></summary><div class="service-body"><p>${e(s.description)}</p></div></details>`).join('')}</div>
   </section>
   <section class="listings" id="ponudba" aria-labelledby="listings-heading"><div class="wrap listings-inner">
-    <div class="listings-heading"><p class="eyebrow"><span class="tiny-square" aria-hidden="true"></span>${e(c.listings.eyebrow)}</p><h2 id="listings-heading">${e(c.listings.heading)}<em>${e(c.listings.italic)}</em></h2></div><p class="listings-intro">${e(c.listings.intro)}</p>
+    <div class="listings-heading"><p class="eyebrow" id="listings-heading"><span class="tiny-square" aria-hidden="true"></span>${e(c.listings.eyebrow)}</p></div><p class="listings-intro">${e(c.listings.intro)}</p>
     <div class="portal-list">${c.listings.portals.map(p=>`<a class="portal" href="${e(p.href)}" target="_blank" rel="noopener noreferrer"><span class="portal-label">${e(p.label)}</span><strong>${e(p.name)}</strong><span class="portal-description">${e(p.description)}</span><span class="portal-arrow">${arrow(true)}</span><span class="sr-only"> (odpre se v novem zavihku)</span></a>`).join('')}</div>
     <p class="listings-direct">${e(c.listings.direct)} <a href="#kontakt">${e(c.listings.directLink)}${arrow()}</a></p>
   </div></section>

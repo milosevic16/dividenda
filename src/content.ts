@@ -12,7 +12,7 @@ export const company = {
 export const content = {
   notFound: { title: 'Strani ni mogoče najti — Dividenda', heading: 'Ta naslov ne obstaja.', description: 'Vrnite se na našo domačo stran.', link: 'Na domačo stran' },
   meta: {
-    title: 'Dividenda — Nepremičnine. Znanje. Zaupanje.',
+    title: 'Dividenda — Nepremičninsko posredovanje, Ptuj',
     description: 'Dividenda, nepremičninsko posredovanje na Ptuju. Prodaja, nakup, menjava, najem in oddaja nepremičnin, prodajne pogodbe ter ocena tržne vrednosti.'
   },
   skip: 'Preskoči na vsebino',
@@ -23,55 +23,53 @@ export const content = {
   ],
   header: { tagline: 'Nepremičninsko posredovanje', location: 'Ptuj, Slovenija', contact: 'Stopimo v stik', menu: 'Meni', close: 'Zapri meni' },
   hero: {
-    eyebrow: 'NEPREMIČNINE. ZNANJE. ZAUPANJE.',
-    lines: ['Prostor za', 'vaše naslednje'], lastLine: 'poglavje.',
-    description: 'Za vsako nepremičnino je zgodba. Pomagamo vam, da svojo nadaljujete s pravo odločitvijo.',
+    eyebrow: 'NEPREMIČNINSKO POSREDOVANJE',
+    lines: ['Prodaja, nakup', 'in najem'], lastLine: 'nepremičnin.',
+    description: 'Dividenda d.o.o. · Orešje 43, 2250 Ptuj.',
     primary: 'Pogovorimo se', secondary: 'Raziščite naše storitve',
     imageAlt: 'Staro mestno jedro Ptuja s Ptujskim gradom in odsevom v Dravi.',
-    caption: 'Doma na Ptuju.', captionSmall: 'Blizu vam in vašim načrtom.',
+    caption: 'Ptuj, Slovenija.', captionSmall: 'Orešje 43 · 2250 Ptuj',
     imageLocation: 'PTUJ · POGLED Z DRAVE',
-    footnote: 'Osebni pristop. Od prvega pogovora naprej.', scroll: 'Spoznajte Dividendo'
+    footnote: 'Nepremičninski posrednik: Igor Jakolič.', scroll: 'Naše storitve'
   },
   services: {
-    eyebrow: 'KAJ LAHKO NAREDIMO ZA VAS',
-    heading: 'Prava podpora.', italic: 'Na vsakem koraku.',
-    intro: 'Prodajate, kupujete ali oddajate? Obrnite se na nas za pomoč pri vaši nepremičninski odločitvi.',
-    link: 'Povejte nam, kaj načrtujete',
+    eyebrow: 'STORITVE',
+    heading: 'Nepremičninsko', italic: 'posredovanje.',
+    intro: 'Prodaja, nakup, menjava, najem in oddaja nepremičnin.',
+    link: 'Kontakt',
     items: [
-      { title: 'Prodaja, nakup in menjava', description: 'Nepremičninsko posredovanje pri prodaji, nakupu ali menjavi vaše nepremičnine.', icon: 'house' },
-      { title: 'Najem in oddaja', description: 'Pomoč pri iskanju nepremičnine za najem ali pri oddaji vaše nepremičnine.', icon: 'key' },
-      { title: 'Prodajne pogodbe', description: 'Sestava in izvedba prodajne pogodbe kot del urejenega nepremičninskega posla.', icon: 'document' },
-      { title: 'Ocena tržne vrednosti', description: 'Ocena tržne vrednosti nepremičnine za lažjo odločitev o naslednjem koraku.', icon: 'value' }
+      { title: 'Prodaja, nakup in menjava', description: 'Posredovanje pri prodaji, nakupu in menjavi nepremičnin.', icon: 'house' },
+      { title: 'Najem in oddaja', description: 'Posredovanje pri najemu in oddaji nepremičnin.', icon: 'key' },
+      { title: 'Prodajne pogodbe', description: 'Sestava in izvedba prodajne pogodbe.', icon: 'document' },
+      { title: 'Ocena tržne vrednosti', description: 'Ocena tržne vrednosti nepremičnine.', icon: 'value' }
     ] satisfies Service[]
   },
   listings: {
     eyebrow: 'AKTUALNA PONUDBA',
-    heading: 'Morda vas naslednji', italic: 'naslov že čaka.',
-    intro: 'Ponudbo nepremičnin si oglejte na nepremičninskih portalih ali nas pokličite in nam zaupajte svoje želje.',
+    intro: 'Oglasi na nepremičninskih portalih.',
     portals: [
-      { name: 'bolha.com', label: 'Naši oglasi', description: 'Obiščite našo trgovino na portalu Bolha.', href: 'https://www.bolha.com/trgovina/zanesljiv007?category=nepremicnine%2F' },
-      { name: 'nepremicnine.net', label: 'Nepremičninski portal', description: 'Raziščite nepremičninsko ponudbo na portalu.', href: 'https://www.nepremicnine.net/' }
+      { name: 'bolha.com', label: 'Naši oglasi', description: 'Oglasi Dividende.', href: 'https://www.bolha.com/trgovina/zanesljiv007?category=nepremicnine%2F' },
+      { name: 'nepremicnine.net', label: 'Nepremičninski portal', description: 'Nepremičninski oglasi.', href: 'https://www.nepremicnine.net/' }
     ] satisfies Portal[],
-    direct: 'Iščete nekaj določenega?', directLink: 'Pogovorite se z nami'
+    direct: '', directLink: 'Kontakt'
   },
   about: {
     eyebrow: 'SPOZNAJTE DIVIDENDO',
-    heading: 'Znanje in izkušnje.', italic: 'Človek na vaši strani.',
-    intro: 'Nepremičnina je več kot naslov. Je pomembna odločitev, pri kateri štejeta strokovno znanje in oseben pogovor.',
-    text: 'Vaš sogovornik je Igor Jakolič, nepremičninski posrednik z licenco št. 2802 in investicijski svetovalec. Za podrobnejše informacije je na voljo po telefonu in v pisarni na Ptuju.',
+    heading: 'Znanje in izkušnje.', italic: 'Dividenda d.o.o.',
+    intro: 'Igor Jakolič, nepremičninski posrednik in investicijski svetovalec.',
+    text: 'Licenca št. 2802. Vpis v imenik nepremičninskih posrednikov št. 0283102802.',
     agentRole: 'Nepremičninski posrednik', licenseLabel: 'Licenca št.', registryLabel: 'Vpis v imenik',
     quote: 'Znanje in izkušnje so naša konkurenčna prednost.',
-    visit: 'Dobrodošli na pogovoru.', availability: 'Vsak delovni dan oziroma po dogovoru.',
-    contact: 'Spoznajmo se'
+    contact: 'Kontakt'
   },
   contact: {
-    eyebrow: 'VAŠ NASLEDNJI KORAK', heading: 'Začnimo', italic: 's pogovorom.',
-    intro: 'Povejte nam, kaj iščete ali kaj želite spremeniti. Z veseljem se pogovorimo o vaši nepremičnini.',
+    eyebrow: 'OREŠJE 43 · PTUJ', heading: 'Kontakt', italic: 'Dividenda.',
+    intro: 'Informacije po telefonu, e-pošti ali v pisarni.',
     phone: 'Pokličite nas', email: 'Pišite nam', visit: 'Obiščite nas', map: 'Pot do nas',
     availability: 'Vsak delovni dan oziroma po dogovoru.'
   },
   footer: {
-    tagline: 'Nepremičnine. Znanje. Zaupanje.', rights: 'Vse pravice pridržane.',
+    tagline: 'Nepremičninsko posredovanje · Ptuj', rights: 'Vse pravice pridržane.',
     privacy: 'Zasebnost', credits: 'Fotografija', back: 'Na vrh',
     privacyTitle: 'Zasebnost na tej spletni strani',
     privacyText: 'Ta spletna stran ne uporablja analitičnih ali oglaševalskih piškotkov in ne vsebuje kontaktnega obrazca. S klikom na e-poštni naslov ali telefonsko številko odprete svojo aplikacijo. Povezave na zunanje portale in zemljevide vodijo na strani z lastnimi pravili zasebnosti.',
