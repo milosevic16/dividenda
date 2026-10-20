@@ -8,7 +8,7 @@ The existing domain is not modified. The Sites version is a private review site.
 - `npm run preview` serves the built output on http://127.0.0.1:4173.
 - JavaScript only enhances mobile navigation and native legal dialogs; all four service disclosures ship open.
 - No analytics, captcha, contact form or non-essential cookies. Contact uses phone, email and external maps.
-- The forest-sale ad is deliberately omitted. The owner explicitly requested restoring “17 let izkušenj” on 2026-10-20; it appears above the about heading.
+- The forest-sale ad is deliberately omitted. The owner explicitly requested “17 let izkušenj” in the hero on 2026-10-20; it appears above the main headline.
 - Business details and the agent license were transcribed from the original site on 2026-10-20; the license has not been independently revalidated.
 - The original Nepremicnine.net URL pointed at an account page. This version links to the public portal and labels it accordingly.
 - Photography: Jernej Furman, CC BY 2.0. Attribution is rendered in the footer photography disclosure.

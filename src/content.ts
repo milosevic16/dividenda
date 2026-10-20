@@ -23,7 +23,7 @@ export const content = {
   ],
   header: { tagline: 'Nepremičninsko posredovanje', location: 'Ptuj, Slovenija', contact: 'Stopimo v stik', menu: 'Meni', close: 'Zapri meni' },
   hero: {
-    eyebrow: 'NEPREMIČNINSKO POSREDOVANJE',
+    eyebrow: '17 LET IZKUŠENJ',
     lines: ['Prodaja, nakup', 'in najem'], lastLine: 'nepremičnin.',
     description: 'Dividenda d.o.o. · Orešje 43, 2250 Ptuj.',
     primary: 'Pogovorimo se', secondary: 'Raziščite naše storitve',
@@ -54,7 +54,7 @@ export const content = {
     direct: '', directLink: 'Kontakt'
   },
   about: {
-    eyebrow: '17 LET IZKUŠENJ',
+    eyebrow: 'SPOZNAJTE DIVIDENDO',
     heading: 'Znanje in izkušnje.', italic: 'Dividenda d.o.o.',
     intro: 'Igor Jakolič, nepremičninski posrednik in investicijski svetovalec.',
     text: 'Licenca št. 2802. Vpis v imenik nepremičninskih posrednikov št. 0283102802.',

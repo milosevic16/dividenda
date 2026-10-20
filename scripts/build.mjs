@@ -41,6 +41,7 @@ for (const attr of ['og:title','og:description','og:url','og:image','og:locale']
 for (const lang of ['sl','x-default']) assert.ok(html.includes(`hreflang="${lang}" href="${origin}/"`));
 assert.ok(!/gozd|10\.000/i.test(html),'Forest advertisement omitted');
 assert.equal(html.split('17 LET IZKUŠENJ').length - 1, 1, 'User-requested experience motto appears once');
+assert.ok(html.match(/<section class="hero wrap"[\s\S]*?<\/section>/)?.[0].includes('17 LET IZKUŠENJ'), 'Experience motto is in the hero');
 assert.ok(html.includes('051 848 241') && html.includes('info@dividenda.com'));
 assert.equal((html.match(/<details open/g)||[]).length,4,'Services expanded without JavaScript');
 const strings = value => typeof value === 'string' ? [value] : value && typeof value === 'object' ? Object.values(value).flatMap(strings) : [];
